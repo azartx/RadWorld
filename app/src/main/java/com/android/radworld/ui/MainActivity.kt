@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
 import com.android.radworld.R
-import com.android.radworld.ui.viewModels.FragmentMap
+
 
 // single activity
 
