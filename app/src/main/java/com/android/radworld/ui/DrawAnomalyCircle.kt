@@ -1,8 +1,9 @@
 package com.android.radworld.ui
 
 import android.graphics.Color
-import com.google.android.gms.maps.model.CircleOptions
-import com.google.android.gms.maps.model.LatLng
+import com.google.android.libraries.maps.model.CircleOptions
+import com.google.android.libraries.maps.model.LatLng
+
 
 /**
  * отрисовывает круг по принятив координатом в формате LatLng
