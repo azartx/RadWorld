@@ -1,4 +1,4 @@
-package com.android.radworld.ui
+package com.android.radworld.ui.anomalyMap
 
 import android.graphics.Color
 import com.google.android.libraries.maps.model.CircleOptions
