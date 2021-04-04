@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_map_global"
+        android:title="one" />
+
+    <item
+        android:id="@+id/nav_days"
+        android:title="two" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="three" />
+
+</menu>
