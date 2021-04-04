@@ -1,7 +1,9 @@
 package com.android.radworld.ui
 
+import android.Manifest.permission.ACCESS_FINE_LOCATION
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.app.ActivityCompat
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import com.android.radworld.R
@@ -18,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
+        getLocationPermission() // если юзер не разрешит доступ, то будет эксэпшн
         loadFragmentMap()
         fragmentsNavListening()
     }
@@ -36,6 +39,13 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
+    }
+
+    // запрос разрешения на отслеживание геолокации.
+    // так понимаю, если есть реквэст код, значит куда то результат приходит выбора.
+    // в таком случае, можно проверить, какую кнопку нажал юзер, и обработать.
+    private fun getLocationPermission() {
+        ActivityCompat.requestPermissions(this, arrayOf(ACCESS_FINE_LOCATION), 1000)
     }
 
 }

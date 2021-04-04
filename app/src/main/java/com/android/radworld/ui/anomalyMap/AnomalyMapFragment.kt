@@ -23,7 +23,7 @@ class AnomalyMapFragment : Fragment(R.layout.fragment_map), OnMapReadyCallback {
 
     private fun createMap() {
         val mapFragment =
-            childFragmentManager.findFragmentById(R.id.fragmentContainerViewMap) as SupportMapFragment
+            parentFragmentManager.findFragmentById(R.id.fragmentContainerViewMap) as SupportMapFragment
         mapFragment.getMapAsync(this)
     }
 
